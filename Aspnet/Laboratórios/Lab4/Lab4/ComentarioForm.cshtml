@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="~/Estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="~/default.cshtml">
+            <h1>Exemplo Web Page</h1>
+            <h2>Html, Javascript, Css, Razor e Web Pages</h2>
+        </a>
+    </header>
+    <section>
+        <p>Deixe seu comentário: </p>
+        <form action="~/ComentarioProcessar.cshtml" method="post">
+            <div class="form-grupo">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" />
+            </div>
+            <div class="form-grupo">
+                <label for="comentario">Comentário</label>
+                <textarea id="comentario" name="comentario"></textarea>
+            </div>
+            <div class="form-botoes">
+                <input type="submit" value="Enviar" />
+            </div>
+        </form>
+    </section>
+</body>
+</html>
