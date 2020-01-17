@@ -16,11 +16,6 @@ namespace SitePessoal.Controllers
                 string pathVirtual = "~/Content/Imagens/";
                 string pathFisico = Server.MapPath(pathVirtual);
 
-                if (string.IsNullOrEmpty(pathFisico))
-                {
-                    throw new FileNotFoundException();
-                }
-
                 string[] arquivos = Directory.GetFiles(pathFisico);
 
                 if (arquivos.Count() == 0)
@@ -50,13 +45,13 @@ namespace SitePessoal.Controllers
 
                 ViewBag.listaArquivos = imageURLList;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Console.WriteLine(ex);
                 ViewBag.ErroMsg = "Não foram encontrados arquivos a exibir.";
                 ViewBag.listaArquivos = new List<string>();
             }
-
+            
             return View();
         }
     }

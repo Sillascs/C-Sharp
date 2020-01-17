@@ -22,10 +22,22 @@ select,
 textarea {
     max-width: 280px;
 }
+tr {
+    min-height: 1.5em;
+    margin : 10px;
+}
+
+td, th {
+    padding: 10px;
+}
 
 .img-portfolio {
     float: left;
     height: 200px;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.img-perfil {
+    width: 100%;
 }

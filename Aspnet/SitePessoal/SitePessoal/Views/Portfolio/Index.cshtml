@@ -1,15 +1,15 @@
 ﻿@{
-    ViewBag.Title = "Portfolio";
+    ViewBag.Title = "Portfólio";
 }
 
 <h2>Portfólio</h2>
 
-<h5 class="danger">@ViewBag.ErroMsg </h5>
-
-@foreach (string arquivo in ViewBag.listaArquivos)
+<h5 class="danger">@ViewBag.ErroMsg</h5>
+<p>Todas as obras são autorais realizadas no período de 1476 à 1519</p>
+@foreach(var arquivo in ViewBag.listaArquivos)
 {
-    <img src="@arquivo" class="img-portfolio" />
-
+    <img src="@arquivo" class="img-portfolio"/>
 }
 
-<div class="clearfix"></div>
+<div class="clearfix">
+</div>

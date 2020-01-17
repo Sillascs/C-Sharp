@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Contatos Recebidos";
+}
+
+<h2>Contatos Recebidos</h2>
+
+<!--
+<li>
+
+</li>
+
+-->
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Data</th>
+        <th>Mensagem</th>
+    </tr>
+    @foreach(var contato in ViewBag.Contatos)
+    {
+    <tr>
+        <td>@contato.Name</td>
+        <td>@contato.Mail</td>
+        <td>@contato.Data.ToString("dd/MM/yyyy")</td>
+        <td>@contato.Message</td>
+    </tr>
+    }
+</table>

@@ -14,21 +14,21 @@ else
 {
     <p>Por favor, preencha o formulário para entrar em contato comigo:</p>
     <hr />
-    <h3 style="color:red">@ViewBag.ErroMsg </h3>
+    <h3 style="color:red;">@ViewBag.ErrorMsg</h3>
     <form action="/Contato/Salvar" method="post">
         <div class="form-group">
-            <label for="Nome" class="control-label">Nome:</label>
-            <input type="text" id="Nome" name="Nome"
+            <label for="Name" class="control-label">Nome:</label>
+            <input type="text" id="Name" name="Name"
                    class="form-control" />
         </div>
         <div class="form-group">
-            <label for="Email" class="control-label">Email:</label>
-            <input type="text" id="Email" name="Email"
+            <label for="Mail" class="control-label">Email:</label>
+            <input type="text" id="Mail" name="Mail"
                    class="form-control" />
         </div>
         <div class="form-group">
-            <label for="Mensagem" class="control-label">Mensagem:</label>
-            <input type="text" id="Mensagem" name="Mensagem"
+            <label for="Message" class="control-label">Mensagem:</label>
+            <input type="text" id="Message" name="Message"
                    ] class="form-control" />
         </div>
         <div class="form-group">
